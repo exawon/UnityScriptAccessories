@@ -80,4 +80,4 @@ Tools to generate a bitmap font:
 
 Linear curve is `B(t) = (1 - t) P0 + t P1`. The 2 dgree curve is `B(t) = (1 - t) ((1 - t) P0 + t P1) + t ((1 - t) P1 + t P2)`. It's `B(t) = (1 - t)^2 P0 + 2 (1 - t) t P1 + t^2 P2` compactly. And for the direction, the first derivative is `B'(t) = 2 (1 - t) (P1 - P0) + 2 t (P2 - P1)`.
 
-![](https://github.com/exawon/UnityScriptAccessories/blob/master/Images/spline-editor-01.png)
+![](https://github.com/exawon/UnityScriptAccessories/blob/master/Images/spline-editor-01.jpg)
