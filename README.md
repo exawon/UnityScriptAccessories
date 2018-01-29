@@ -25,7 +25,8 @@ public class PlayControl : AnimatorBehaviour
     IEnumerator Intro(int layer, int nameHash)
     {
         //OnStateEnter
-        
+
+
         while (StateCondition)
         {
             //OnStateUpdate
@@ -76,8 +77,10 @@ Tools to generate a bitmap font:
 
 ## Spline
 
-[Spline](https://github.com/exawon/UnityScriptAccessories/tree/master/Spline) folder contains `SplineEditor`, `SplineData`, `SplineFollower`.
+[Spline](https://github.com/exawon/UnityScriptAccessories/tree/master/Spline) folder contains `SplineEditor`, `SplineData`, `SplineFollower`.  
 
-Linear curve is `B(t) = (1 - t) P0 + t P1`. The quadratic curve is `B(t) = (1 - t) ((1 - t) P0 + t P1) + t ((1 - t) P1 + t P2)`. It's `B(t) = (1 - t)^2 P0 + 2 (1 - t) t P1 + t^2 P2` compactly. And for the direction, the first derivative is `B'(t) = 2 (1 - t) (P1 - P0) + 2 t (P2 - P1)`.
+Linear curve is `B(t) = (1 - t) P0 + t P1`. The quadratic curve is `B(t) = (1 - t) ((1 - t) P0 + t P1) + t ((1 - t) P1 + t P2)`. It's `B(t) = (1 - t)^2 P0 + 2 (1 - t) t P1 + t^2 P2` compactly. And for the direction, the first derivative is `B'(t) = 2 (1 - t) (P1 - P0) + 2 t (P2 - P1)`.  
+
+`Spline` has been implemented as cubic curve. Each point has incomming handle and outgoing handle.  
 
 ![](https://github.com/exawon/UnityScriptAccessories/blob/master/Images/spline-editor-01.jpg)
